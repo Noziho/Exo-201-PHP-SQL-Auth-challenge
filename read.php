@@ -37,7 +37,7 @@ if (!isset($_SESSION['login'], $_SESSION['passwd'])) {
         <td>Durée: <?=$value['duration'];?></td>
         <td>Dénivelée: <?=$value['height_difference'];?> m</td>
         <td>Validité: <?= $value['available'] ?></td>
-        <td><a href="/?p=delete&id=<?= $value['id'] ?>">Supprimez la randonnée</a></td>
+        <td><a href="/?p=/forms/delete&id=<?= $value['id'] ?>">Supprimez la randonnée</a></td>
                 <?php
         }?>
     </table><?php

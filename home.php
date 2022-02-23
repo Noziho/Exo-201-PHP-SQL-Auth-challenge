@@ -10,8 +10,9 @@
 </head>
 <body>
 <?php
-if (isset($_SESSION['login'], $_SESSION['passwd'])) { ?>
-<form action="/?p=logout" method="post">
+if (isset($_SESSION['login'], $_SESSION['passwd'])) {?>
+<h1>Bienvenue</h1>
+<form action="/?p=/forms/logout" method="post">
     <div>
         <button type="submit" name="button">Se déconnecter</button>
     </div>
@@ -20,6 +21,7 @@ if (isset($_SESSION['login'], $_SESSION['passwd'])) { ?>
     }
 
 else { ?>
+    <h1>Se connecter: </h1>
     <form action="/?p=login" method="post">
         <div>
             <button type="submit" name="button">Se connecter</button>

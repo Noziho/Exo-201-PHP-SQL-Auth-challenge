@@ -33,7 +33,6 @@ if (isset($_GET['f'])) {?>
         <input type="number" name="height_difference" placeholder="Dénivelée" required>
 
         <select name="available" id="available" required>
-            <option value="Validite">Validité: </option>
             <option value="Oui">Oui</option>
             <option value="Non">Non</option>
         </select>

@@ -1,7 +1,7 @@
 <?php
 
-require __DIR__ . '/classes/Config.php';
-require __DIR__ . '/classes/DB_Connect.php';
+require __DIR__ . '/../classes/Config.php';
+require __DIR__ . '/../classes/DB_Connect.php';
 
 function delete_content() {
     $id = $_GET['id'];
