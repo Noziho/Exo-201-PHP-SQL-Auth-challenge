@@ -15,9 +15,3 @@ function checkRange (string$value, int$min, int$max, $redirect):void {
     }
 
 }
-
-function checkFilter($var) {
-    if (!$var) {
-        header("Location: /index.php");
-    }
-};

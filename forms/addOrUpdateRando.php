@@ -16,14 +16,6 @@ $height_difference = filter_var($_POST['height_difference'], FILTER_SANITIZE_NUM
 $available = filter_var($_POST['available'], FILTER_SANITIZE_STRING);
 
 
-checkFilter($name);
-checkFilter($difficulty);
-checkFilter($distance);
-checkFilter($duration);
-checkFilter($height_difference);
-checkFilter($available);
-
-
 checkRange($name, 5, 80, '/index.php');
 checkRange($distance, 0, 2000, '/index.php');
 checkRange($duration, 0, 6000, '/index.php');
@@ -67,9 +59,6 @@ function update_content ($name, $difficulty, $distance, $duration, $height_diffe
 
         header("Location: /read.php");
     }
-
-
-
 
 }
 
